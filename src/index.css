@@ -36,3 +36,10 @@ body {
    font-weight: 200;
    cursor: pointer;
  }
+
+@media (max-width: 600px) {
+  .product-card {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
