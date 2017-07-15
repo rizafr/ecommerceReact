@@ -11,8 +11,7 @@ body {
 .page-subtitle {
   font-weight: 400;
   font-size: 1rem;
-  margin: 10px 30px;
-  padding: 20px;
+  margin: 20px 10px;
   font-style: italic;
 }
 .product-card {
