@@ -5,7 +5,7 @@ import CatalogItem from './catalog_item';
 class Catalog extends Component {
   render() {
     const items = this.props.products.map(product =>
-      <CatalogItem product={product} key={product.id} />
+      <CatalogItem product={product} key={product.id} onAddToCart={this.props.onAddToCart }/>
     );
     return (
       <div>
@@ -17,7 +17,8 @@ class Catalog extends Component {
 }
 
 Catalog.propTypes = {
-  products: PropTypes.array
+  products: PropTypes.array,
+  onAddToCart: PropTypes.func
 };
 
 export default Catalog;
